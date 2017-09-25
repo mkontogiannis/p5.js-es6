@@ -1,5 +1,5 @@
 import p5 from 'p5';
-import '../scss/style.scss';
+import '../css/style.scss';
 
 const sketch = p => {
   let canvas;
