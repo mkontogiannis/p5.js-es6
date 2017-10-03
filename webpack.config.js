@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
 	devtool: "inline-sourcemap",
@@ -26,7 +25,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.scss$/,
+				test: /\.*css$/,
 				loader: "css-loader!sass-loader"
 			}
 		]
@@ -35,12 +34,6 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/index.html', to: 'index.html' },
       { from: 'src/assets', to: 'assets' }
-    ]),
-		new webpack.optimize.UglifyJsPlugin({
-      include: /\.js$/,
-      minimize: true
-    }),
-		new webpack.HotModuleReplacementPlugin(),
-		new OpenBrowserPlugin({ url: 'http://localhost:3333' })
+    ])
   ]
 }

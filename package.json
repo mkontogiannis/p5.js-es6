@@ -4,9 +4,9 @@
   "description": "Boilerplate for writing p5.js sketches in es6 with babel, webpack and sass.",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "webpack-dev-server --progress --colors",
+    "dev": "webpack-dev-server --progress --colors --inline --hot --open",
     "prebuild": "npm install",
-    "build": "npm run clean && webpack --progress --colors"
+    "build": "npm run clean && webpack --progress --colors -p"
   },
   "repository": {
     "type": "git",
@@ -25,14 +25,12 @@
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.0",
-    "copy-webpack-plugin": "4.0.1",
+    "copy-webpack-plugin": "4.1.0",
     "css-loader": "0.28.7",
     "node-sass": "4.5.3",
-    "open-browser-webpack-plugin": "0.0.5",
     "rimraf": "2.6.2",
     "sass-loader": "6.0.6",
-    "style-loader": "0.18.2",
     "webpack": "3.6.0",
-    "webpack-dev-server": "2.5.0"
+    "webpack-dev-server": "2.9.1"
   }
 }
