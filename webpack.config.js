@@ -15,7 +15,7 @@ module.exports = {
 		port: 3333
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
