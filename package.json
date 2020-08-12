@@ -19,20 +19,20 @@
   },
   "homepage": "https://github.com/mkontogiannis/p5.js-es6#README",
   "dependencies": {
-    "p5": "0.7.2"
+    "p5": "1.1.9"
   },
   "devDependencies": {
-    "@babel/core": "7.1.2",
-    "@babel/preset-env": "7.1.0",
-    "babel-loader": "8.0.4",
-    "copy-webpack-plugin": "4.5.4",
-    "css-loader": "1.0.0",
-    "node-sass": "4.9.4",
-    "rimraf": "2.6.2",
-    "sass-loader": "7.1.0",
-    "style-loader": "0.23.1",
-    "webpack": "4.21.0",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.1.9"
+    "@babel/core": "7.11.1",
+    "@babel/preset-env": "7.11.0",
+    "babel-loader": "8.1.0",
+    "copy-webpack-plugin": "6.0.3",
+    "css-loader": "4.2.1",
+    "node-sass": "4.14.1",
+    "rimraf": "3.0.2",
+    "sass-loader": "9.0.3",
+    "style-loader": "1.2.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
   }
 }

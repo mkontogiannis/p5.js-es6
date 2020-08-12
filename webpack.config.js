@@ -15,13 +15,14 @@ module.exports = {
 		port: 3333
 	},
 	module: {
-		rules: [
-			{
+		rules: [{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: 'babel-loader',
-				query: {
-					presets: ['@babel/preset-env']
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env']
+					}
 				}
 			},
 			{
@@ -31,9 +32,16 @@ module.exports = {
 		]
 	},
 	plugins: [
-    new CopyWebpackPlugin([
-      { from: 'src/index.html', to: 'index.html' },
-      { from: 'src/assets', to: 'assets' }
-    ])
-  ]
+		new CopyWebpackPlugin({
+			patterns: [{
+					from: 'src/index.html',
+					to: 'index.html'
+				},
+				{
+					from: 'src/assets',
+					to: 'assets'
+				}
+			],
+		})
+	]
 }
