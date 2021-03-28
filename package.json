@@ -4,9 +4,9 @@
   "description": "Boilerplate for writing p5.js sketches in es6 with babel, webpack and sass.",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "webpack-dev-server --progress --colors --inline --hot --open",
+    "dev": "webpack serve --progress --color",
     "prebuild": "npm install",
-    "build": "npm run clean && webpack --progress --colors -p"
+    "build": "npm run clean && webpack --progress --color --mode=production"
   },
   "repository": {
     "type": "git",
@@ -19,21 +19,21 @@
   },
   "homepage": "https://github.com/mkontogiannis/p5.js-es6#README",
   "dependencies": {
-    "p5": "1.1.9"
+    "p5": "1.3.1"
   },
   "devDependencies": {
-    "@babel/core": "7.11.1",
-    "@babel/preset-env": "7.11.0",
-    "babel-loader": "8.1.0",
-    "copy-webpack-plugin": "6.0.3",
-    "css-loader": "4.2.1",
-    "node-sass": "4.14.1",
+    "@babel/core": "7.13.13",
+    "@babel/preset-env": "7.13.12",
+    "babel-loader": "8.2.2",
+    "copy-webpack-plugin": "8.1.0",
+    "css-loader": "5.2.0",
+    "node-sass": "5.0.0",
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
-    "sass-loader": "9.0.3",
-    "style-loader": "1.2.1",
-    "webpack": "4.44.1",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.0"
+    "sass-loader": "11.0.1",
+    "style-loader": "2.0.0",
+    "webpack": "5.28.0",
+    "webpack-cli": "4.6.0",
+    "webpack-dev-server": "3.11.2"
   }
 }
