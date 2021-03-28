@@ -28,6 +28,7 @@
     "copy-webpack-plugin": "6.0.3",
     "css-loader": "4.2.1",
     "node-sass": "4.14.1",
+    "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "sass-loader": "9.0.3",
     "style-loader": "1.2.1",
