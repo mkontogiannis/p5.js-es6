@@ -27,7 +27,7 @@
     "babel-loader": "8.2.2",
     "copy-webpack-plugin": "8.1.0",
     "css-loader": "5.2.0",
-    "node-sass": "5.0.0",
+    "node-sass": "7.0.0",
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "sass-loader": "11.0.1",
