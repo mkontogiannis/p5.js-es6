@@ -11,10 +11,14 @@ module.exports = {
     filename: 'js/sketch.js',
   },
   devServer: {
+    client: {
+      logging: 'info',
+      progress: true,
+    },
     compress: true,
-    inline: true,
-    hotOnly: true,
-    open: 'Google Chrome',
+    // inline: true,
+    hot: 'only',
+    open: true,
     port: 3333,
   },
   module: {
