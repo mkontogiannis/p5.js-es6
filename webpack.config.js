@@ -60,6 +60,10 @@ module.exports = {
           to: 'index.html',
         },
         {
+          from: 'src/favicon.ico',
+          to: 'favicon.ico',
+        },
+        {
           from: 'src/assets',
           to: 'assets',
         },
