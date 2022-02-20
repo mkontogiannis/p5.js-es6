@@ -22,3 +22,7 @@ Use the following command when done to build the bundled minified result under t
 ## Resources
 
 For a Next.js/React setup please have a look here -> [p5.js-next.js](https://github.com/mkontogiannis/p5.js-next.js)
+
+## Tips
+
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy me a coffee" style="height: 60px !important;width: 217px !important;">](https://www.buymeacoffee.com/mkontogiannis)
