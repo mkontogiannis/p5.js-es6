@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: __dirname + '/src/js/sketch.js',
+  entry: __dirname + '/src/js/sketch.ts',
   output: {
     path: __dirname + '/dist/',
     publicPath: '/',
@@ -16,8 +16,6 @@ module.exports = {
       progress: true,
     },
     compress: true,
-    // inline: true,
-    hot: 'only',
     open: true,
     port: 3333,
   },
@@ -31,6 +29,14 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env'],
           },
+        },
+      },
+      {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
+          options: { allowTsInNodeModules: true },
         },
       },
       {
