@@ -1,6 +1,6 @@
-# p5.js-es6 boilerplate
+# p5.js es6/ts boilerplate
 
-Boilerplate for writing p5.js sketches in es6 with babel, webpack and sass.
+Boilerplate for writing p5.js sketches in es6 or typescript with babel, webpack and sass.
 
 ## Usage
 
