@@ -1,6 +1,8 @@
-# p5.js es6/ts boilerplate
+# A p5.js es6/ts boilerplate
 
-Boilerplate for writing p5.js sketches in es6 or typescript with babel, webpack and sass.
+This is a simple boilerplate for writing p5.js sketches in es6 or typescript with babel, webpack and sass.
+
+DEMO on Vercel (https://p5-js-es6.vercel.app/)
 
 ## Usage
 
@@ -16,3 +18,7 @@ Use the following command while writing a sketch to start the dev server with ho
 
 Use the following command when done to build the bundled minified result under the `/dist` folder:<br />
 `npm run build`
+
+## Resources
+
+For a Next.js/React setup please have a look here -> [p5.js-next.js](https://github.com/mkontogiannis/p5.js-next.js)
